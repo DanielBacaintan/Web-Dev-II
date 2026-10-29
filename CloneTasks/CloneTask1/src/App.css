@@ -1,0 +1,461 @@
+/* AI assistance: ChatGPT generated this starter stylesheet.
+   Prompt: "Style the Clone Task 1 React page (header, hero, course cards, about, footer)
+   to match the JSX class names in App.jsx."
+   These values are examples; adapt to the official task wireframe if required. */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f8fa;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem clamp(1rem, 5vw, 4rem);
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #172554;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background: #6d28d9;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #6d28d9;
+}
+
+.header-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.6rem;
+  background: #172554;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.header-button:hover {
+  background: #1e3a8a;
+}
+
+main {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 3rem clamp(1rem, 5vw, 2rem);
+  flex: 1;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.eyebrow {
+  color: #6d28d9;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin: 0.75rem 0 1rem;
+  color: #111827;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.08;
+}
+
+.hero h1 span {
+  color: #6d28d9;
+}
+
+.hero-description {
+  color: #4b5563;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: 0.7rem;
+  background: #6d28d9;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.primary-button:hover {
+  background: #5b21b6;
+}
+
+.secondary-link {
+  color: #172554;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.secondary-link:hover {
+  text-decoration: underline;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats strong {
+  font-size: 1.5rem;
+  color: #172554;
+}
+
+.hero-stats span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+.hero-visual {
+  background: #0f172a;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+  color: #e2e8f0;
+}
+
+.visual-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.window-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #475569;
+}
+
+.window-dot:nth-child(1) {
+  background: #f87171;
+}
+
+.window-dot:nth-child(2) {
+  background: #fbbf24;
+}
+
+.window-dot:nth-child(3) {
+  background: #34d399;
+}
+
+.visual-label {
+  margin-left: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.code-preview {
+  padding: 1.25rem 1.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.code-preview p {
+  margin: 0;
+}
+
+.code-indent {
+  padding-left: 1.5rem;
+}
+
+.code-indent-2 {
+  padding-left: 3rem;
+}
+
+.code-purple {
+  color: #c084fc;
+}
+
+.code-blue {
+  color: #60a5fa;
+}
+
+.code-green {
+  color: #4ade80;
+}
+
+.visual-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  background: #1e293b;
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.status-indicator {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
+}
+
+.courses-section {
+  margin-bottom: 4rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.section-heading h2 {
+  margin: 0.5rem 0 0;
+  color: #111827;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.section-heading p {
+  max-width: 420px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  max-width: 760px;
+}
+
+.about-section h2 {
+  margin: 0.5rem 0 0;
+  color: #111827;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.about-section p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.about-link {
+  color: #6d28d9;
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.25rem clamp(1rem, 5vw, 4rem);
+  background: #111827;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.site-footer span {
+  color: #9ca3af;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-number {
+  color: #9ca3af;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.card-arrow {
+  color: #6d28d9;
+  font-size: 1.1rem;
+}
+
+.course-category {
+  color: #6d28d9;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.course-card h3 {
+  margin: 0;
+  color: #172554;
+  font-size: 1.25rem;
+}
+
+.course-card p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.course-link {
+  color: #172554;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.course-link:hover {
+  color: #6d28d9;
+}
+
